@@ -23,10 +23,6 @@ button {
     cursor: pointer;
 }
 
-#simBtn {
-    position: relative; /* Mantém o botão "Sim" com a posição relativa */
-}
-
 #naoBtn {
     position: absolute; /* Adiciona position absolute ao botão "Não" */
     max-width: 100px; /* Limita a largura máxima do botão "Não" */
