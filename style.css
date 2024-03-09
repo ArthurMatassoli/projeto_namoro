@@ -24,7 +24,9 @@ button {
 }
 
 #simBtn {
-    position: static; /* Muda para position static para manter o botão "Sim" no fluxo normal */
+    /* Mude para position static para manter o botão "Sim" no fluxo normal */
+    position: static;
+    margin-right: 10px; /* Adiciona margem à direita para separar os botões */
 }
 
 #naoBtn {
