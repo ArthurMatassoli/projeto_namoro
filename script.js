@@ -1,14 +1,28 @@
+function moveBotaoNao() {
+    // Obtém as dimensões da janela
+    var windowWidth = window.innerWidth;
+    var windowHeight = window.innerHeight;
+
+    // Obtém o botão "Não"
+    var naoBtn = document.getElementById("naoBtn");
+
+    // Calcula uma posição aleatória dentro da janela
+    var novoLeft = Math.random() * (windowWidth - naoBtn.clientWidth);
+    var novoTop = Math.random() * (windowHeight - naoBtn.clientHeight);
+
+    // Define a nova posição do botão
+    naoBtn.style.left = novoLeft + "px";
+    naoBtn.style.top = novoTop + "px";
+}
+
 function aceitar() {
-    // Exibe alerta com a mensagem de parabéns
     alert("Parabéns, agora a gente namora!!! 😍");
 
-    // Remove o conteúdo atual
     var content = document.getElementById("content");
     content.innerHTML = "";
 
-    // Adiciona o gif de gatinho cobrindo a tela
     var gatinho = document.createElement("img");
-    gatinho.src = "gatinho.gif";
+    gatinho.src = "caminho/do/seu/gatinho.gif";
     gatinho.alt = "Gatinho Fofo";
     gatinho.style.position = "fixed";
     gatinho.style.top = "0";
@@ -18,6 +32,9 @@ function aceitar() {
     gatinho.style.objectFit = "cover";
     gatinho.style.zIndex = "9999";
 
-    // Adiciona o gatinho ao corpo da página
     document.body.appendChild(gatinho);
+}
+
+function recusar() {
+    moveBotaoNao();
 }
