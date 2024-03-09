@@ -23,6 +23,10 @@ button {
     cursor: pointer;
 }
 
+#simBtn {
+    position: static; /* Muda para position static para manter o botão "Sim" no fluxo normal */
+}
+
 #naoBtn {
     position: absolute; /* Adiciona position absolute ao botão "Não" */
     max-width: 100px; /* Limita a largura máxima do botão "Não" */
