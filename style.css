@@ -20,10 +20,13 @@ body {
 button {
     padding: 10px 20px;
     font-size: 16px;
-    margin: 0 10px;
     cursor: pointer;
 }
 
 #naoBtn {
     position: absolute; /* Adiciona position absolute ao botão "Não" */
+    max-width: 100px; /* Limita a largura máxima do botão "Não" */
+    top: 0; /* Mantém o botão no topo */
+    left: 50%; /* Centraliza inicialmente o botão "Não" */
+    transform: translateX(-50%); /* Corrige a centralização */
 }
