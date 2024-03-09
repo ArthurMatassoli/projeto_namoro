@@ -1,14 +1,10 @@
 function moveBotaoNao() {
-    // Obtém as dimensões da janela
-    var windowWidth = window.innerWidth;
-    var windowHeight = window.innerHeight;
-
     // Obtém o botão "Não"
     var naoBtn = document.getElementById("naoBtn");
 
-    // Calcula uma posição aleatória dentro da janela
-    var novoLeft = Math.random() * (windowWidth - naoBtn.clientWidth);
-    var novoTop = Math.random() * (windowHeight - naoBtn.clientHeight);
+    // Calcula uma nova posição aleatória dentro da janela
+    var novoLeft = Math.random() * (window.innerWidth - naoBtn.clientWidth);
+    var novoTop = Math.random() * (window.innerHeight - naoBtn.clientHeight);
 
     // Define a nova posição do botão
     naoBtn.style.left = novoLeft + "px";
@@ -22,7 +18,7 @@ function aceitar() {
     content.innerHTML = "";
 
     var gatinho = document.createElement("img");
-    gatinho.src = "caminho/do/seu/gatinho.gif";
+    gatinho.src = "gatinho.gif";
     gatinho.alt = "Gatinho Fofo";
     gatinho.style.position = "fixed";
     gatinho.style.top = "0";
