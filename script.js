@@ -7,8 +7,8 @@ function aceitar() {
     var gatinho = document.createElement("img");
     gatinho.src = "gatinho.gif";
     gatinho.alt = "Gatinho Fofo";
-    gatinho.style.width = "100%";
-    gatinho.style.height = "100%";
+    gatinho.style.width = "50%"; // Ajuste o tamanho conforme necessário
+    gatinho.style.height = "50%";
     gatinho.style.objectFit = "cover";
     gatinho.style.zIndex = "9999";
 
@@ -16,13 +16,9 @@ function aceitar() {
 }
 
 function recusar() {
-    moveBotaoNao();
-}
-
-function moveBotaoNao() {
     var naoBtn = document.getElementById("naoBtn");
 
-    var novoLeft = Math.random() * (window.innerWidth - naoBtn.clientWidth);
+    var novoLeft = Math.random() * (Math.min(window.innerWidth, 1920) - naoBtn.clientWidth);
     var novoTop = Math.random() * (window.innerHeight - naoBtn.clientHeight);
 
     naoBtn.style.left = novoLeft + "px";
