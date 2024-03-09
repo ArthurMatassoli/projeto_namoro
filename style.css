@@ -14,7 +14,8 @@ body {
 
 .buttons {
     margin-top: 20px;
-    position: relative; /* Adiciona position relative ao container dos botões */
+    display: flex; /* Adiciona display flex para alinhar os botões */
+    justify-content: center; /* Centraliza os botões horizontalmente */
 }
 
 button {
@@ -23,16 +24,6 @@ button {
     cursor: pointer;
 }
 
-#simBtn {
-    /* Mude para position static para manter o botão "Sim" no fluxo normal */
-    position: static;
-    margin-right: 10px; /* Adiciona margem à direita para separar os botões */
-}
-
 #naoBtn {
-    position: absolute; /* Adiciona position absolute ao botão "Não" */
-    max-width: 100px; /* Limita a largura máxima do botão "Não" */
-    top: 50%; /* Mantém o botão verticalmente no centro */
-    left: 50%; /* Mantém o botão horizontalmente no centro */
-    transform: translate(-50%, -50%); /* Centraliza o botão "Não" */
+    margin-left: 10px; /* Adiciona margem à esquerda para separar os botões */
 }
