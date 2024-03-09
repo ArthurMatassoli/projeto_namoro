@@ -30,7 +30,7 @@ button {
 #naoBtn {
     position: absolute; /* Adiciona position absolute ao botão "Não" */
     max-width: 100px; /* Limita a largura máxima do botão "Não" */
-    top: 0; /* Mantém o botão no topo */
-    left: 50%; /* Centraliza inicialmente o botão "Não" */
-    transform: translateX(-50%); /* Corrige a centralização */
+    top: 50%; /* Mantém o botão verticalmente no centro */
+    left: 50%; /* Mantém o botão horizontalmente no centro */
+    transform: translate(-50%, -50%); /* Centraliza o botão "Não" */
 }
