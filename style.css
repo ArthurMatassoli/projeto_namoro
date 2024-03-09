@@ -24,8 +24,11 @@ button {
     cursor: pointer;
 }
 
+#simBtn {
+    margin-right: 10px; /* Adiciona margem à direita para separar os botões */
+}
+
 #naoBtn {
-    margin-left: 10px; /* Adiciona margem à esquerda para separar os botões */
     position: absolute; /* Adiciona position absolute ao botão "Não" */
     max-width: 100px; /* Limita a largura máxima do botão "Não" */
     top: 50%; /* Mantém o botão verticalmente no centro */
