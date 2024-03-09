@@ -14,6 +14,7 @@ body {
 
 .buttons {
     margin-top: 20px;
+    position: relative; /* Adiciona position relative ao container dos botões */
 }
 
 button {
@@ -21,5 +22,8 @@ button {
     font-size: 16px;
     margin: 0 10px;
     cursor: pointer;
-    position: absolute; /* Adiciona position absolute */
+}
+
+#naoBtn {
+    position: absolute; /* Adiciona position absolute ao botão "Não" */
 }
